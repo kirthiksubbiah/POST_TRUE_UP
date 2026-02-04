@@ -1,73 +1,214 @@
 # POST TRUE UP
 
-Validation framework for Jira Service Management migrations using Playwright and REST APIs.
-
+Validation framework for Jira Service Management migrations using Playwright and REST APIs
 
 ---
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Usage](#usage)
-- [Running Tests](#running-tests)
-- [Logging](#logging)
-- [Security Notes](#security-notes)
-- [Troubleshooting](#troubleshooting)
-- [Contributing](#contributing)
-- [License](#license)
+- Overview
+- Features
+- Project Structure
+- Commit Message Rules
+- Branch Naming Convention
+- Prerequisites
+- Installation
+- Configuration
+- Usage
+- Running Tests
+- Logging
+- Security Notes
+- Troubleshooting
+- Contributing
+- License
 
 ---
 
 ## Overview
 
-This project is a Python-based application designed to:
+This project is a Python-based validation framework designed for Jira Service Management (JSM) migration and post-migration true-up validation.
 
-- Automate validation tasks
-- Interact with external systems via REST APIs
-- Perform UI-based checks using Playwright
-- Support migration or regression verification workflows
+It supports:
+- Migration validation
+- Regression verification
+- API and UI consistency checks
 
-The application is intended for **internal / controlled environments**.
+This framework is intended for internal and controlled environments only.
 
 ---
 
 ## Features
 
 - UI automation using Playwright
-- REST API validation using `requests`
-- Pytest-based test execution
+- REST API validation using requests
+- Pytest-based execution
 - Modular helper architecture
-- Structured logging to file and console
-- CLI-driven execution support
+- Structured logging (file and console)
+- CLI-driven execution
+- Designed for migration and post-true-up workflows
 
 ---
 
 ## Project Structure
-Commit Message & Branch Naming Rules
-✅ Commit Message Format
-All commit messages must match one of the following patterns:
-Allowed types
-build | ci | docs | feat | fix | perf | refactor | style | test | chore | revert | merge
-Format
+
+project-root/
+├── config/          # Environment and authentication configuration
+├── helpers/         # Shared utilities and helpers
+├── tests/           # Pytest test cases
+├── logs/            # Execution logs
+├── reports/         # Test reports (optional)
+├── requirements.txt
+└── README.md
+
+---
+
+## Commit Message Rules
+
+### Commit Message Format
+
+All commit messages must follow:
+
 <type>(optional-scope): short description
-Valid examples
-feat(auth): add login validationfix: resolve crash on startupdocs(readme): update setup stepschore: update dependenciesmerge: branch develop into mainNotes added by release scriptProject initial commit
-❌ Invalid examples
-added new featurebug fixFEAT: something
-🌿 Branch Naming Convention
-Branch names must follow one of these patterns:
-Standard branches
-feature/<name>-<number>hotfix/<name>-<number>uat/<name>-<number>pilot/<name>-<number>
-OR using hyphens
-feature-<name>-<number>hotfix-<name>-<number>uat-<name>-<number>pilot-<name>-<number>
-Special allowed branches
+
+### Allowed Types
+
+build | ci | docs | feat | fix | perf | refactor | style | test | chore | revert | merge
+
+### Valid Examples
+
+feat(auth): add login validation  
+fix: resolve crash on startup  
+docs(readme): update setup steps  
+chore: update dependencies  
+merge: branch develop into main
+
+### Invalid Examples
+
+added new feature  
+bug fix  
+FEAT: something
+
+---
+
+## Branch Naming Convention
+
+### Standard Branches
+
+feature/<name>-<number>  
+hotfix/<name>-<number>  
+uat/<name>-<number>  
+pilot/<name>-<number>
+
+OR using hyphens:
+
+feature-<name>-<number>  
+hotfix-<name>-<number>  
+uat-<name>-<number>  
+pilot-<name>-<number>
+
+### Special Allowed Branches
+
 livetraintmo/main
-Valid examples
-feature-login-123hotfix/payment-45uat-search-9pilot/onboarding-101live
-❌ Invalid examples
-feature_loginbugfix-123maindev-feature-1
+
+### Valid Examples
+
+feature-login-123  
+hotfix-payment-45  
+uat-search-9  
+pilot-onboarding-101  
+live
+
+### Invalid Examples
+
+feature_login  
+bugfix-123  
+main  
+dev-feature-1
+
+---
+
+## Prerequisites
+
+- Python 3.10 or higher
+- Node.js (required for Playwright)
+- Jira Service Management access (API and UI)
+- Git
+
+---
+
+## Installation
+
+git clone <repository-url>  
+cd <project-root>  
+pip install -r requirements.txt  
+playwright install
+
+---
+
+## Configuration
+
+- Configure environment values in the config directory
+- Store API tokens securely
+- Do not commit secrets to source control
+
+---
+
+## Usage
+
+The framework supports:
+- API-only validations
+- UI-only validations
+- Combined UI + API migration checks
+
+Execution is driven via Pytest.
+
+---
+
+## Running Tests
+
+pytest -v
+
+Optional flags:
+
+pytest -s  
+pytest -k <keyword>
+
+---
+
+## Logging
+
+- Logs are written to console and files
+- Log files are stored in the logs directory
+- Logs are structured for debugging and audit review
+
+---
+
+## Security Notes
+
+- Internal use only
+- Never commit credentials or tokens
+- Rotate API tokens regularly
+- Follow organizational security policies
+
+---
+
+## Troubleshooting
+
+- Playwright browser missing: run playwright install
+- Authentication failures: verify tokens and permissions
+- Migration mismatches: validate source vs target data
+
+---
+
+## Contributing
+
+- Follow commit and branch naming rules strictly
+- Add tests for all new validations
+- Keep helpers reusable
+- Ensure tests pass before submitting PRs
+
+---
+
+## License
+
+Internal use only. Refer to organizational licensing policies.
