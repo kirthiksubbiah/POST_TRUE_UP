@@ -48,4 +48,26 @@ The application is intended for **internal / controlled environments**.
 ---
 
 ## Project Structure
-
+Commit Message & Branch Naming Rules
+✅ Commit Message Format
+All commit messages must match one of the following patterns:
+Allowed types
+build | ci | docs | feat | fix | perf | refactor | style | test | chore | revert | merge
+Format
+<type>(optional-scope): short description
+Valid examples
+feat(auth): add login validationfix: resolve crash on startupdocs(readme): update setup stepschore: update dependenciesmerge: branch develop into mainNotes added by release scriptProject initial commit
+❌ Invalid examples
+added new featurebug fixFEAT: something
+🌿 Branch Naming Convention
+Branch names must follow one of these patterns:
+Standard branches
+feature/<name>-<number>hotfix/<name>-<number>uat/<name>-<number>pilot/<name>-<number>
+OR using hyphens
+feature-<name>-<number>hotfix-<name>-<number>uat-<name>-<number>pilot-<name>-<number>
+Special allowed branches
+livetraintmo/main
+Valid examples
+feature-login-123hotfix/payment-45uat-search-9pilot/onboarding-101live
+❌ Invalid examples
+feature_loginbugfix-123maindev-feature-1
