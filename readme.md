@@ -87,7 +87,7 @@ added new featurebug fixFEAT: something
 
 ---
 
-##🌿 Branch Naming Convention
+## 🌿 Branch Naming Convention
 
 Branch names must follow one of these patterns:
 
