@@ -1,9 +1,7 @@
-# Project Name
+# POST TRUE UP
 
-Short, precise description of what this Python application does.
+Validation framework for Jira Service Management migrations using Playwright and REST APIs.
 
-Example:
-> Validation framework for Jira Service Management migrations using Playwright and REST APIs.
 
 ---
 
