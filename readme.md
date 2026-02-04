@@ -62,49 +62,43 @@ project-root/
 
 ---
 
-## Commit Message Rules
+## Commit Message & Branch Naming Rules
 
 ### Commit Message Format
 
-All commit messages must follow:
+All commit messages must match one of the following patterns:
 
-<type>(optional-scope): short description
 
 ### Allowed Types
 
 build | ci | docs | feat | fix | perf | refactor | style | test | chore | revert | merge
 
+### Format
+
+<type>(optional-scope): short description
+
 ### Valid Examples
 
-feat(auth): add login validation  
-fix: resolve crash on startup  
-docs(readme): update setup steps  
-chore: update dependencies  
-merge: branch develop into main
+feat(auth): add login validationfix: resolve crash on startupdocs(readme): update setup stepschore: update dependenciesmerge: branch develop into mainNotes added by release scriptProject initial commit
 
 ### Invalid Examples
 
-added new feature  
-bug fix  
-FEAT: something
+added new featurebug fixFEAT: something
 
 ---
 
-## Branch Naming Convention
+##🌿 Branch Naming Convention
+
+Branch names must follow one of these patterns:
 
 ### Standard Branches
 
-feature/<name>-<number>  
-hotfix/<name>-<number>  
-uat/<name>-<number>  
-pilot/<name>-<number>
+feature/<name>-<number>hotfix/<name>-<number>uat/<name>-<number>pilot/<name>-<number>
+
 
 OR using hyphens:
 
-feature-<name>-<number>  
-hotfix-<name>-<number>  
-uat-<name>-<number>  
-pilot-<name>-<number>
+feature-<name>-<number>hotfix-<name>-<number>uat-<name>-<number>pilot-<name>-<number>
 
 ### Special Allowed Branches
 
@@ -112,13 +106,9 @@ livetraintmo/main
 
 ### Valid Examples
 
-feature-login-123  
-hotfix-payment-45  
-uat-search-9  
-pilot-onboarding-101  
-live
+feature-login-123hotfix/payment-45uat-search-9pilot/onboarding-101live
 
-### Invalid Examples
+### ❌ Invalid Examples
 
 feature_login  
 bugfix-123  
