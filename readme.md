@@ -58,9 +58,3 @@ feature_loginbugfix-123maindev-feature-1
 ---
 
 
-
----
-
-## License
-
-Internal use only. Refer to organizational licensing policies.
