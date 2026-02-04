@@ -50,6 +50,7 @@ This guide explains how to generate a Jira API token required for REST API authe
 ![Token Details](https://github.com/user-attachments/assets/4af4d8d3-a3e9-41f7-b82f-ce4a714ca8e0)
 
 ---
+
 ## Commit Message & Branch Naming Rules
 
 ### ✅ Commit Message Format
