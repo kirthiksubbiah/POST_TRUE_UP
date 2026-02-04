@@ -64,7 +64,7 @@ project-root/
 
 ## Commit Message & Branch Naming Rules
 
-### Commit Message Format
+### ✅ Commit Message Format
 
 All commit messages must match one of the following patterns:
 
@@ -81,7 +81,7 @@ build | ci | docs | feat | fix | perf | refactor | style | test | chore | revert
 
 feat(auth): add login validationfix: resolve crash on startupdocs(readme): update setup stepschore: update dependenciesmerge: branch develop into mainNotes added by release scriptProject initial commit
 
-### Invalid Examples
+### ❌ Invalid Examples
 
 added new featurebug fixFEAT: something
 
