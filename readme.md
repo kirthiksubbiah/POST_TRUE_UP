@@ -12,15 +12,15 @@ This guide explains how to generate a Jira API token required for REST API authe
 2. Click on your profile avatar (top-right corner).
 3. Select **Account settings**.
 
-![Account Settings](https://github.com/user-attachments/assets/ffc6c3f0-727e-4034-91dc-0d01f3c7f48a)
+![Account Settings](https://github.com/user-attachments/assets/e26e09ac-c5e2-47f5-9f53-fc380e6de2d0)
 
 ---
 
 ### Step 2: Navigate to Security
 
-1. In the Account Settings page, click on **Security** from the left-hand menu.
+1. In the Account Settings page, click on **Security**.
 
-![Security Page](https://github.com/user-attachments/assets/e26e09ac-c5e2-47f5-9f53-fc380e6de2d0)
+![Security Page](https://github.com/user-attachments/assets/ffc6c3f0-727e-4034-91dc-0d01f3c7f48a)
 
 ---
 
