@@ -2,11 +2,11 @@
 
 ## Steps to Create a Jira API Token
 
-### Generate a JSM API token (Atlassian → Account → Security → API tokens).
-### Store JSM token in GitLab CI variables
-### Create/Update Kubernetes Secret from GitLab CI vars
-### App reads env vars from Secret
-### Python uses env vars for JSM API authentication
+### 1. Generate a JSM API token (Atlassian → Account → Security → API tokens).
+### 2. Store JSM token in GitLab CI variables
+### 3. Create/Update Kubernetes Secret from GitLab CI vars
+### 4. App reads env vars from Secret
+### 5. Python uses env vars for JSM API authentication
 
 ---
 
